@@ -1,0 +1,41 @@
+.ticket-price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  border-right: 1px solid lightgray;
+  padding: 20px;
+
+  .ticket-carrier {
+    font-weight: bold;
+  }
+
+  .ticket-buy-btn.ticket-buy-btn {
+    font-size: 16px;
+    white-space: normal;
+    word-wrap: none;
+    height: auto;
+    font-weight: bold;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--orange-color);
+      color: var(--white-color);
+      opacity: 0.7;
+      border-color: inherit;
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ticket-price-container {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid lightgray;
+  }
+}

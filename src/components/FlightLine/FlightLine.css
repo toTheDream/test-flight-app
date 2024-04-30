@@ -1,0 +1,26 @@
+.flight-line-container {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.5;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 5px;
+
+  .flight-line {
+    display: flex;
+    align-items: center;
+
+    .line {
+      border-bottom: 1px solid black;
+      flex: 1 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flight-line-container {
+    display: none;
+  }
+}

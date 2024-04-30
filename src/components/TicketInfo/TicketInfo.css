@@ -1,0 +1,15 @@
+.ticket-info {
+  display: flex;
+  padding: 20px;
+  flex: 1 0 auto;
+
+  & > * {
+    flex: 1 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ticket-info {
+    width: 100%;
+  }
+}

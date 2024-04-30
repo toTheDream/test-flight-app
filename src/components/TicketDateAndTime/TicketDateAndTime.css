@@ -1,0 +1,20 @@
+.ticket-date-and-time-container {
+  display: flex;
+  flex-direction: column;
+
+  &.arrival {
+    align-items: flex-end;
+  }
+
+  .ticket-time {
+    font-size: 30px;
+  }
+
+  .ticket-boarding {
+    font-weight: bold;
+  }
+
+  .ticket-date {
+    opacity: 0.7;
+  }
+}
